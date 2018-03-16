@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Location</title>
+    <style type="text/css">
+      body {
+        margin: 10px;
+        white-space: nowrap;
+      }
+
+      .tabela>tbody>tr>td:first-child {
+        font-weight: bold;
+      }
+
+      #container {
+        align-items: center;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <table align="center" class="tabela">
+      <tbody>
+        <tr><td>IP</td><td><a id="ip"></a></td></tr>
+        <tr><td>Country</td><td><a id="country"></a></td></tr>
+        <tr><td>City</td><td><a id="city"></a></td></tr>
+        <tr><td>TimeZone</td><td><a id="timeZone"></a></td></tr>
+      </tbody>
+    </table>
+	<div id="mapholder" style="width:400px;height:400px;background:yellow"></div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3pBf4duPbi27TPdDmAobOmzYLzeBz-r0&callback=initMap" async defer></script>
+  </body>
+</html>
